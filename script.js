@@ -71,3 +71,24 @@ playPauseBtn.addEventListener('click', () => {
     }
     isPlaying = !isPlaying;
 });
+// --- Funcionalidad de Corazones al hacer Clic ---
+
+document.body.addEventListener('click', function(event) {
+    const corazon = document.createElement('div');
+    corazon.classList.add('corazon-click');
+
+    // Definimos el tamaño para centrar el corazón en el puntero
+    const size = 25; 
+    
+    // Posiciona el corazón exactamente donde se hizo clic (restamos la mitad del tamaño para centrarlo)
+    corazon.style.left = (event.clientX - size / 2) + 'px';
+    corazon.style.top = (event.clientY - size / 2) + 'px';
+
+    document.body.appendChild(corazon);
+
+    // Eliminar el corazón después de que termine su animación
+    // La animación 'desvanecer-corazon' dura 1 segundo (1000 milisegundos) en el CSS.
+    setTimeout(() => {
+        corazon.remove();
+    }, 1000); 
+});
