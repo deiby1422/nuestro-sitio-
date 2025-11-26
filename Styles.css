@@ -153,6 +153,73 @@ footer {
         opacity: 0; /* Se desvanece por completo */
     }
 }
+/* --- ESTILOS PARA LA SECCIÓN DE RECUERDOS (COLLAGE) --- */
+
+#memory-section {
+    display: flex; /* Habilita el diseño Flexbox */
+    justify-content: space-around; /* Distribuye el espacio entre los dos contenedores */
+    align-items: flex-start; /* Alinea los elementos arriba */
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white; /* Fondo blanco para destacar */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.memory-text {
+    flex-basis: 40%; /* El texto ocupa el 40% del espacio */
+    padding: 10px 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.memory-text h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #880E4F; /* Borgoña Oscuro */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.memory-text p {
+    font-size: 1.1em;
+    line-height: 1.5; /* Espaciado cómodo entre líneas */
+    margin: 0;
+}
+
+/* --- ESTILOS DEL COLLAGE --- */
+
+.photo-collage {
+    flex-basis: 50%; /* El collage ocupa el 50% del espacio */
+    display: grid; /* Habilita el diseño de cuadrícula */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual ancho */
+    grid-gap: 5px; /* Pequeño espacio entre las fotos */
+    padding: 5px;
+}
+
+.photo-collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Transición suave para el hover */
+}
+
+.photo-collage img:hover {
+    transform: scale(1.05); /* Zoom ligero al pasar el ratón */
+    box-shadow: 0 0 10px rgba(200, 147, 142, 0.7); /* Sombra de color romántico */
+}
+
+/* Media Query: Para pantallas pequeñas (móviles), apila el texto y el collage */
+@media (max-width: 768px) {
+    #memory-section {
+        flex-direction: column; /* Cambia a una columna */
+        align-items: center;
+    }
+    .memory-text, .photo-collage {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
 
 
 
