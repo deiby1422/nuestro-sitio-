@@ -109,3 +109,52 @@ footer {
     50% { transform: scale(1.05); }  /* 50%: Crece un 5% (simula el latido) */
     100% { transform: scale(1); }    /* 100%: Vuelve a tamaño normal */
 }
+/* Estilo para los corazones que aparecen al hacer clic */
+.corazon-click {
+    position: absolute;
+    width: 25px; /* Un poco más grande al hacer clic */
+    height: 25px;
+    background-color: #E8A9BC; /* Rosa más intenso (Blush Pink) */
+    transform: rotate(-45deg);
+    z-index: 1000; /* Asegura que esté por encima de todo */
+    opacity: 1;
+    pointer-events: none; /* No bloquear eventos de ratón */
+    /* Animación de aparecer y desvanecerse (dura 1 segundo) */
+    animation: desvanecer-corazon 1s ease-out forwards; 
+}
+
+.corazon-click::before,
+.corazon-click::after {
+    content: "";
+    position: absolute;
+    width: 25px; /* Mismo tamaño que el padre */
+    height: 25px;
+    background-color: inherit;
+    border-radius: 50%;
+}
+
+.corazon-click::before {
+    top: -12.5px; /* Mitad del alto (25px/2) */
+    left: 0;
+}
+
+.corazon-click::after {
+    top: 0;
+    left: 12.5px; /* Mitad del ancho (25px/2) */
+}
+
+/* Definición de la animación de desvanecimiento */
+@keyframes desvanecer-corazon {
+    0% {
+        transform: translateY(0) rotate(-45deg) scale(0); /* Empieza muy pequeño (invisble) */
+        opacity: 1;
+    }
+    30% {
+        transform: translateY(-10px) rotate(-45deg) scale(1.2); /* Crece y sube un poco */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-30px) rotate(-45deg) scale(0.8); /* Sube más y se encoge */
+        opacity: 0; /* Se desvanece por completo */
+    }
+}
