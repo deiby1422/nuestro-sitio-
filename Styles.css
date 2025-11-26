@@ -28,7 +28,7 @@ header {
 header h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 3.5em;
-    color: white;
+    color: #white;
     /* --- LÍNEAS IMPORTANTES PARA LA ANIMACIÓN --- */
     display: inline-block; /* Es crucial para la transformación */
     transition: transform 0.2s; 
@@ -153,5 +153,6 @@ footer {
         opacity: 0; /* Se desvanece por completo */
     }
 }
+
 
 
