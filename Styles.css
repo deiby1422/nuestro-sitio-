@@ -25,22 +25,17 @@ header {
     padding: 20px 0;
 }
 
-/* Estilos para el título (Asegúrate de que 'display: inline-block;' esté aquí) */
 header h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 3.5em;
     color: #C8938E;
     /* --- LÍNEAS IMPORTANTES PARA LA ANIMACIÓN --- */
-    display: inline-block; /* Es crucial para que la transformación funcione */
-    transition: transform 0.2s; /* Hace que el cambio sea suave */
-    cursor: default; /* Indica al usuario que es interactivo */
-}
+    display: inline-block; /* Es crucial para la transformación */
+    transition: transform 0.2s; 
 
-/* Aplica el latido cuando el ratón está encima del título */
-header h1:hover {
-    animation: latido 0.8s infinite; /* Usa la animación 'latido' por 0.8 segundos, y repítela 'infinite' (mientras esté en hover) */
+    /* AÑADIR ESTA LÍNEA */
+    animation: latido 1.5s infinite alternate; 
 }
-
 
 #carrusel {
     margin: 30px auto;
@@ -158,3 +153,4 @@ footer {
         opacity: 0; /* Se desvanece por completo */
     }
 }
+
