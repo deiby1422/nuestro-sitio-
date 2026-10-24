@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Esperándote, Lía Victoria 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="embarazo.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <span class="star s1">✦</span>
+    <span class="star s2">✧</span>
+    <span class="star s3">✦</span>
+    <span class="star s4">✧</span>
+    <span class="moon">☾</span>
+    <span class="cloud cloud1">☁</span>
+    <span class="cloud cloud2">☁</span>
+  </div>
+
+  <header class="topbar">
+    <a href="index.html" class="back">← Nuestra historia</a>
+    <span>Un pequeño milagro 💕</span>
+  </header>
+
+  <main>
+    <section class="hero section reveal">
+      <div class="eyebrow">UN NUEVO CAPÍTULO COMIENZA</div>
+      <div class="big-heart" id="heartButton" role="button" tabindex="0"
+           aria-label="Pulsa para descubrir nuestra sorpresa">♡</div>
+      <p class="hint">Toca el corazón para descubrir nuestra sorpresa</p>
+      <div id="surprise" class="surprise hidden" aria-live="polite">
+        <p>El amor que nació entre nosotros ahora crece en una nueva vida...</p>
+        <h1>¡Vamos a tener una niña!</h1>
+        <div class="name">Lía Victoria</div>
+        <p class="script">Ya te amamos sin haberte visto todavía. 💗</p>
+      </div>
+      <div id="intro" class="intro">
+        <h1>Hay historias de amor que se convierten en familia...</h1>
+        <p>Y la nuestra está a punto de vivir su capítulo más hermoso.</p>
+      </div>
+      <a href="#familia" class="scroll-link">Descubre nuestro nuevo comienzo ↓</a>
+    </section>
+
+    <section id="familia" class="section family reveal">
+      <p class="eyebrow">ANTES ÉRAMOS DOS...</p>
+      <h2>Y ahora nuestro amor tiene un nombre</h2>
+      <div class="family-art" aria-label="Ilustración decorativa de una familia">
+        <span>🧔🏻</span><span>👶🏻</span><span>👩🏻</span>
+      </div>
+      <h3>Deivy, Julieth y nuestra pequeña Lía</h3>
+      <p>
+        No sabemos todavía cómo será tu sonrisa, cómo sonará tu risa
+        ni cómo serán tus ojitos. Pero ya imaginamos el día en que
+        podamos abrazarte y decirte: bienvenida a casa.
+      </p>
+    </section>
+
+    <section class="section wonder reveal">
+      <p class="eyebrow">UN MUNDO HECHO PARA TI</p>
+      <h2>Pequeñas sorpresas para nuestra princesa</h2>
+      <p class="muted">Toca cada dibujito; guardamos una promesa para ti.</p>
+      <div class="toy-grid">
+        <button class="toy" data-message="Siempre tendrás un lugar seguro en nuestros brazos. 🧸">
+          <span>🧸</span><small>Un abrazo</small>
+        </button>
+        <button class="toy" data-message="Aunque la noche sea oscura, siempre estaremos para acompañarte. 🌙">
+          <span>🌙</span><small>Una promesa</small>
+        </button>
+        <button class="toy" data-message="Deseamos que crezcas rodeada de ternura, alegría y amor. 🌸">
+          <span>🌸</span><small>Un deseo</small>
+        </button>
+        <button class="toy" data-message="Desde antes de conocerte, ya ocupas un espacio inmenso en nuestros corazones. 💗">
+          <span>💗</span><small>Un secreto</small>
+        </button>
+      </div>
+      <div id="toyMessage" class="message-box" aria-live="polite">
+        Aquí aparecerá tu sorpresa...
+      </div>
+    </section>
+
+    <section class="section ultrasound reveal">
+      <p class="eyebrow">NUESTRO PRIMER RECUERDO</p>
+      <h2>La primera vez que empezamos a imaginarte</h2>
+      <div class="photo-frame">
+        <div class="photo-placeholder">
+          <span>🤍</span>
+          <p>Aquí puedes colocar la ecografía de Lía Victoria</p>
+          <small>Reemplaza este espacio por tu fotografía cuando quieras.</small>
+        </div>
+      </div>
+      <p class="script">Tan pequeñita y ya tan amada.</p>
+    </section>
+
+    <section class="section countdown-section reveal">
+      <p class="eyebrow">CADA DÍA ESTAMOS MÁS CERCA</p>
+      <h2>La cuenta regresiva para conocerte</h2>
+      <p class="muted">Fecha estimada: 15 de enero de 2027</p>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">--</strong><span>días</span></div>
+        <div><strong id="hours">--</strong><span>horas</span></div>
+        <div><strong id="minutes">--</strong><span>minutos</span></div>
+        <div><strong id="seconds">--</strong><span>segundos</span></div>
+      </div>
+      <p class="countdown-note">Cada día que pasa es un día menos para abrazarte. 💕</p>
+    </section>
+
+    <section class="section letters reveal">
+      <p class="eyebrow">PALABRAS PARA TI</p>
+      <h2>Cartas que nacen del corazón</h2>
+      <p class="muted">Elige una carta y descubre lo que queremos decirte.</p>
+      <div class="letter-buttons">
+        <button data-letter="mom">💌 De mamá</button>
+        <button data-letter="dad">💌 De papá</button>
+        <button data-letter="future">💌 Para tu futuro</button>
+      </div>
+      <article id="letter" class="letter-card" aria-live="polite">
+        <h3>Para nuestra pequeña Lía</h3>
+        <p>Hay palabras que esperan el momento indicado para ser leídas...</p>
+      </article>
+    </section>
+
+    <section class="finale section reveal">
+      <div class="final-stars">✦ ✧ ♡ ✧ ✦</div>
+      <h2>Te estamos esperando, Lía Victoria</h2>
+      <p>
+        Mamá y papá todavía tienen mucho por aprender, pero hay algo
+        que ya saben con todo el corazón: vamos a amarte cada día,
+        cuidarte y acompañarte mientras descubres el mundo.
+      </p>
+      <p class="signature">Con todo nuestro amor,<br><strong>Julieth y Deivy</strong></p>
+      <div class="final-heart">♡</div>
+      <a href="index.html" class="main-button">Volver al inicio de nuestra historia</a>
+    </section>
+  </main>
+
+  <footer>Hecho con amor para Lía Victoria · 2026–2027 💗</footer>
+
+  <button id="musicButton" class="music-button" type="button" aria-pressed="false">
+    ♫ Música: activar
+  </button>
+  <audio id="lullaby" loop preload="none"></audio>
+
+  <script src="embarazo.js"></script>
+</body>
+</html>
