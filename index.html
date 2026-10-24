@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestro Rincón de Amor 💖</title>
-    <link rel="stylesheet" href="Styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160d20">
+  <title>Nuestro Rincón de Amor 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css">
 </head>
-
 <body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
 
-    <header>
-        <h1>Tal vez el ultimo Mensaje para ti...</h1>
-    </header>
-
-    <main id="content-container">
-
-        <section id="carrusel">
-            <img id="main-image" src="img/img1.jpg" alt="Imagen de amor 1">
-            <p id="main-text">"El amor no consiste en mirar al otro, sino en mirar juntos en la misma dirección." -
-                Saint-Exupéry</p>
-        </section>
-
-        <div class="controls">
-            <button id="prev-btn">⬅️ Anterior</button>
-            <button id="next-btn">Siguiente ➡️</button>
-        </div>
-        <section id="memory-section">
-    
-    <div class="memory-text">
-        <h3>Te Extraño Tanto...</h3>
-        <p>
-            Desde que no estamos juntos, cada día se siente incompleto. 
-            Extraño el sonido de tu risa, la forma en que me mirabas 
-            y las charlas sin fin. A veces, desearía que el tiempo 
-            retrocediera solo para vivir esos momentos una vez más. 
-            Estos recuerdos son lo único que me mantiene hasta que 
-            nuestros caminos se vuelvan a cruzar.
-        </p>
+  <header class="hero">
+    <nav class="topbar">
+      <span class="brand">NUESTRO RINCÓN <span>♥</span></span>
+      <span class="chapter">UNA HISTORIA · 01</span>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">PARA TI, SIEMPRE</p>
+      <h1>Tal vez el último<br><em>mensaje para ti...</em></h1>
+      <p class="hero-subtitle">Hay recuerdos que el tiempo no consigue borrar.</p>
+      <a class="scroll-cue" href="#recuerdos"><span>Descubrir</span><b>↓</b></a>
     </div>
+  </header>
 
-    <div class="photo-collage">
-        <img src="img/recuerdo1.jpg" alt="Recuerdo de pareja 1">
-        <img src="img/recuerdo2.jpg" alt="Recuerdo de pareja 2">
-        <img src="img/recuerdo3.jpg" alt="Recuerdo de pareja 3">
-        <img src="img/recuerdo4.jpg" alt="Recuerdo de pareja 4">
+  <main id="content-container">
+    <section id="carrusel" class="memory-card reveal">
+      <div class="card-top"><span id="slide-counter">01 / 04</span><span class="tiny-heart">♥</span></div>
+      <div class="media-wrap">
+        <div class="image-glow"></div>
+        <img id="main-image" src="img/img1.jpg" alt="Abrazo">
+        <div id="text-only-mark" aria-hidden="true">“</div>
+      </div>
+      <div class="quote-area"><p id="main-text">Cada día a tu lado fue un regalo que atesoro.</p></div>
+      <div class="controls">
+        <button id="prev-btn" class="icon-btn" aria-label="Recuerdo anterior">←</button>
+        <div class="progress"><span id="progress-bar"></span></div>
+        <button id="next-btn" class="icon-btn" aria-label="Siguiente recuerdo">→</button>
+      </div>
+    </section>
+
+    <section id="recuerdos" class="section-heading reveal">
+      <p class="eyebrow">LOS PEQUEÑOS DETALLES</p>
+      <h2>Te extraño <em>tanto...</em></h2><div class="heading-line"></div>
+    </section>
+
+    <section id="memory-section" class="letter-section reveal">
+      <div class="memory-text">
+        <span class="letter-number">01</span>
+        <h3>Hasta los días más simples<br>tenían algo especial.</h3>
+        <p>Desde que no estamos juntos, cada día se siente incompleto. Extraño el sonido de tu risa, la forma en que me mirabas y las charlas sin fin. A veces, desearía que el tiempo retrocediera solo para vivir esos momentos una vez más. Estos recuerdos son lo único que me mantiene hasta que nuestros caminos se vuelvan a cruzar.</p>
+        <div class="signature">Con cariño, siempre <span>♥</span></div>
+      </div>
+      <div class="photo-collage">
+        <figure class="photo photo-a"><img src="img/recuerdo1.jpg" alt="Recuerdo de pareja 1"></figure>
+        <figure class="photo photo-b"><img src="img/recuerdo2.jpg" alt="Recuerdo de pareja 2"></figure>
+        <figure class="photo photo-c"><img src="img/recuerdo3.jpg" alt="Recuerdo de pareja 3"></figure>
+        <figure class="photo photo-d"><img src="img/recuerdo4.jpg" alt="Recuerdo de pareja 4"></figure>
+      </div>
+    </section>
+
+    <section class="final-note reveal">
+      <span>♡</span>
+      <p>“El amor no consiste en mirar al otro, sino en mirar juntos en la misma dirección.”</p>
+      <small>— Antoine de Saint-Exupéry</small>
+    </section>
+
+    <div class="music-player" id="music-player">
+      <div class="music-info"><span class="music-disc">♪</span><div><small>NUESTRA CANCIÓN</small><strong>Un recuerdo que sigue sonando</strong></div></div>
+      <button id="play-pause-btn" aria-label="Reproducir música"><span id="music-icon">▶</span></button>
     </div>
-    
-</section>
+    <audio id="background-music" loop><source src="music/fondo_romantico.mp3" type="audio/mp3"></audio>
+  </main>
 
-        <audio id="background-music" loop>
-            <source src="music/fondo_romantico.mp3" type="audio/mp3">
-            Tu navegador no soporta el elemento de audio.
-        </audio>
-
-        <button id="play-pause-btn">▶️ Tocar Música</button>
-    </main>
-
-    <footer>
-        <p>&copy; Hecho por El inoportuno .</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer><span>Hecho con amor</span><span>♥</span><span>para alguien especial</span></footer>
+  <script src="script.js"></script>
 </body>
-
-
 </html>
