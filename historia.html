@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestra Historia</title>
+
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+
+    <nav class="story-nav">
+
+        <a href="index.html" class="logo">
+            ♡
+        </a>
+
+        <div>
+            <a href="recuerdos.html">Recuerdos</a>
+            <a href="carta.html">Carta</a>
+            <a href="galeria.html">Galería</a>
+        </div>
+
+    </nav>
+
+
+    <!-- ESCENA 1 -->
+
+    <section class="story-section intro">
+
+        <div class="story-content">
+
+            <p class="eyebrow">CAPÍTULO I</p>
+
+            <h1>
+                Todo comenzó
+                <span>con pequeños momentos.</span>
+            </h1>
+
+            <p>
+                Y quizás en ese momento no sabíamos
+                lo importantes que llegarían a ser.
+            </p>
+
+            <button onclick="nextStory()">
+                Continuar ↓
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ESCENA 2 -->
+
+    <section class="story-section photo-scene">
+
+        <div class="photo-wrapper">
+
+            <img src="img/img1.jpg"
+                 alt="Nuestro primer recuerdo">
+
+        </div>
+
+        <div class="story-text">
+
+            <p class="eyebrow">PRIMER RECUERDO</p>
+
+            <h2>
+                Cada día a tu lado
+                fue un regalo que atesoro.
+            </h2>
+
+            <p>
+                Hay fotografías que simplemente muestran
+                un momento.
+
+                Y hay otras que consiguen hacernos sentir
+                exactamente lo que sentíamos aquel día.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ESCENA 3 -->
+
+    <section class="story-section memories">
+
+        <p class="eyebrow">CAPÍTULO II</p>
+
+        <h2>
+            Algunos momentos
+            <span>merecen quedarse para siempre.</span>
+        </h2>
+
+        <div class="memory-grid">
+
+            <img src="img/recuerdo1.jpg">
+
+            <img src="img/recuerdo2.jpg">
+
+            <img src="img/recuerdo3.jpg">
+
+            <img src="img/recuerdo4.jpg">
+
+        </div>
+
+    </section>
+
+
+    <!-- ESCENA 4 -->
+
+    <section class="story-section letter-scene">
+
+        <div class="letter">
+
+            <p class="eyebrow">CAPÍTULO III</p>
+
+            <h2>
+                Una carta que nunca
+                supe cómo decir.
+            </h2>
+
+            <p>
+                Quizás hubo palabras que quedaron guardadas.
+            </p>
+
+            <p>
+                Quizás muchas cosas nunca se dijeron
+                de la manera correcta.
+            </p>
+
+            <p>
+                Pero si pudiera regresar a aquellos momentos,
+                volvería a elegir cada instante contigo.
+            </p>
+
+            <a href="carta.html" class="main-button">
+                Leer la carta completa →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="story-section final-scene">
+
+        <img src="img/img2.jpg"
+             alt="Nuestro recuerdo">
+
+        <div class="final-overlay">
+
+            <p class="eyebrow">
+                ÚLTIMO CAPÍTULO
+            </p>
+
+            <h1>
+                Quizás este no sea
+                <span>el último capítulo.</span>
+            </h1>
+
+            <a href="index.html" class="main-button">
+                Volver a nuestra historia
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <audio id="music" loop>
+        <source src="music/fondo_romantico.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <button class="music-button"
+            onclick="toggleMusic()">
+        ♪
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
