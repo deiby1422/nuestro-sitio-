@@ -1,237 +1,132 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Recuerdos ❤️</title>
-
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
-
-<link rel="stylesheet" href="Styles.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="Styles.css">
 </head>
-
-
 <body>
 
     <!-- NAVEGACIÓN -->
-
     <nav class="story-nav">
-
-        <a href="index.html" class="logo">
-            ♡
-        </a>
-
+        <a href="index.html" class="logo"> ♡ </a>
         <div>
-
-            <a href="historia.html">
-                Historia
-            </a>
-
-            <a href="recuerdos.html">
-                Recuerdos
-            </a>
-
-            <a href="carta.html">
-                Carta
-            </a>
-
+            <a href="historia.html"> Historia </a>
+            <a href="recuerdos.html"> Recuerdos </a>
+            <a href="carta.html"> Carta </a>
         </div>
-
     </nav>
 
-
     <!-- ENCABEZADO -->
-
     <section class="story-section memories">
-
-        <p class="eyebrow">
-            NUESTROS RECUERDOS
+        <p class="eyebrow"> NUESTROS RECUERDOS </p>
+        <h1> Momentos que <span>guardo conmigo.</span> </h1>
+        <p class="hero-text"> 
+            Porque algunas fotografías no son solamente fotografías. Son lugares a los que podemos volver cuando cerramos los ojos. 
         </p>
 
-        <h1>
-            Momentos que
-            <span>guardo conmigo.</span>
-        </h1>
+        <!-- FOTOS / CARRUSEL -->
+        <div class="memories-carousel">
+            <div class="swiper memories-swiper">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <img src="img/recuerdo1.jpg" alt="Nuestro primer recuerdo">
+                        <div class="memory-caption">
+                            <span>♡ 01</span>
+                            <h3>Donde comenzó todo</h3>
+                            <p>Un recuerdo que siempre tendrá un lugar en mi corazón.</p>
+                        </div>
+                    </div>
 
-        <p class="hero-text">
+                    <div class="swiper-slide">
+                        <img src="img/recuerdo2.jpg" alt="Un momento especial juntos">
+                        <div class="memory-caption">
+                            <span>♡ 02</span>
+                            <h3>Un momento especial</h3>
+                            <p>Contigo, hasta los pequeños momentos se vuelven inolvidables.</p>
+                        </div>
+                    </div>
 
-            Porque algunas fotografías no son solamente
-            fotografías.
+                    <div class="swiper-slide">
+                        <img src="img/recuerdo3.jpg" alt="Un recuerdo de nuestro amor">
+                        <div class="memory-caption">
+                            <span>♡ 03</span>
+                            <h3>Momentos que atesoro</h3>
+                            <p>Hay fotografías que guardan mucho más que una imagen.</p>
+                        </div>
+                    </div>
 
-            Son lugares a los que podemos volver
-            cuando cerramos los ojos.
+                    <div class="swiper-slide">
+                        <img src="img/recuerdo4.jpg" alt="Un recuerdo de nuestra historia">
+                        <div class="memory-caption">
+                            <span>♡ 04</span>
+                            <h3>Nuestra historia</h3>
+                            <p>Y todavía nos quedan tantos recuerdos por crear.</p>
+                        </div>
+                    </div>
 
-        </p>
+                    <!-- CORREGIDO: Se añadió la clase 'swiper-slide' aquí -->
+                    <div class="swiper-slide memory-baby-card">
+                        <div class="baby-content">
+                            <span class="baby-heart">♡</span>
+                            <p>EL CAPÍTULO MÁS HERMOSO</p>
+                            <h3>Lía Victoria</h3>
+                            <p>Nuestro amor crece y ahora tiene un nuevo nombre.</p>
+                            <a href="embarazo.html">Descubrir su historia →</a>
+                        </div>
+                    </div>
 
-
-        <!-- FOTOS -->
-
-       
-<!-- CARRUSEL EFFECT CARDS -->
-<div class="memories-carousel">
-
-  <div class="swiper memories-swiper">
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide">
-        <img src="img/recuerdo1.jpg" alt="Nuestro primer recuerdo">
-        <div class="memory-caption">
-          <span>♡ 01</span>
-          <h3>Donde comenzó todo</h3>
-          <p>Un recuerdo que siempre tendrá un lugar en mi corazón.</p>
+                </div>
+            </div>
+            
+            <div class="memories-pagination"></div>
+            <p class="memories-hint">Desliza las tarjetas para descubrir nuestros recuerdos ♡</p>
         </div>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="img/recuerdo2.jpg" alt="Un momento especial juntos">
-        <div class="memory-caption">
-          <span>♡ 02</span>
-          <h3>Un momento especial</h3>
-          <p>Contigo, hasta los pequeños momentos se vuelven inolvidables.</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="img/recuerdo3.jpg" alt="Un recuerdo de nuestro amor">
-        <div class="memory-caption">
-          <span>♡ 03</span>
-          <h3>Momentos que atesoro</h3>
-          <p>Hay fotografías que guardan mucho más que una imagen.</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="img/recuerdo4.jpg" alt="Un recuerdo de nuestra historia">
-        <div class="memory-caption">
-          <span>♡ 04</span>
-          <h3>Nuestra historia</h3>
-          <p>Y todavía nos quedan tantos recuerdos por crear.</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide memory-baby-card">
-        <div class="baby-content">
-          <span class="baby-heart">♡</span>
-          <p>EL CAPÍTULO MÁS HERMOSO</p>
-          <h3>Lía Victoria</h3>
-          <p>Nuestro amor crece y ahora tiene un nuevo nombre.</p>
-          <a href="embarazo.html">Descubrir su historia →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="memories-pagination"></div>
-
-  <p class="memories-hint">Desliza las tarjetas para descubrir nuestros recuerdos ♡</p>
-
-</div>
-
-
     </section>
-
 
     <!-- FRASE FINAL -->
-
     <section class="story-section letter-scene">
-
         <div class="letter">
-
-            <p class="eyebrow">
-                PARA RECORDAR
-            </p>
-
-            <h2>
-
-                No importa cuántos años pasen...
-
-                <span>
-                    algunos momentos siempre
-                    tendrán nuestro nombre.
-                </span>
-
-            </h2>
-
+            <p class="eyebrow"> PARA RECORDAR </p>
+            <h2> No importa cuántos años pasen... <span> algunos momentos siempre tendrán nuestro nombre. </span> </h2>
             <br>
-
-            <a
-                href="carta.html"
-                class="main-button"
-            >
-                Leer mi carta →
-            </a>
-
+            <a href="carta.html" class="main-button"> Leer mi carta → </a>
         </div>
-
     </section>
 
-
     <!-- BOTÓN DE MÚSICA -->
-
-    <audio
-        id="music"
-        loop
-    >
-
-        <source
-            src="music/fondo_romantico.mp3"
-            type="audio/mpeg"
-        >
-
+    <audio id="music" loop>
+        <source src="music/fondo_romantico.mp3" type="audio/mpeg">
     </audio>
+    <button class="music-button" onclick="toggleMusic()"> ♪ </button>
 
-
-    <button
-        class="music-button"
-        onclick="toggleMusic()"
-    >
-        ♪
-    </button>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-<script>
-  const memoriesSwiper = new Swiper(".memories-swiper", {
-    effect: "cards",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: false,
-    speed: 650,
-
-    cardsEffect: {
-      perSlideOffset: 10,
-      perSlideRotate: 3,
-      rotate: true,
-      slideShadows: true
-    },
-
-    pagination: {
-      el: ".memories-pagination",
-      clickable: true
-    },
-
-    keyboard: {
-      enabled: true
-    }
-  });
-</script>
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const memoriesSwiper = new Swiper(".memories-swiper", {
+            effect: "cards",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: false,
+            speed: 650,
+            cardsEffect: {
+                perSlideOffset: 10,
+                perSlideRotate: 3,
+                rotate: true,
+                slideShadows: true
+            },
+            pagination: {
+                el: ".memories-pagination",
+                clickable: true
+            },
+            keyboard: {
+                enabled: true
+            }
+        });
+    </script>
 </body>
 </html>
-
-
-
- 
-</body>
-
-</html>
-```
