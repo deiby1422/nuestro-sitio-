@@ -11,7 +11,10 @@
 
     <title>Nuestros Recuerdos ❤️</title>
 
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="Styles.css">
 
 </head>
 
@@ -75,29 +78,68 @@
 
         <!-- FOTOS -->
 
-        <div class="memory-grid">
+       
+<!-- CARRUSEL EFFECT CARDS -->
+<div class="memories-carousel">
 
-            <img
-                src="img/recuerdo1.jpg"
-                alt="Nuestro recuerdo 1"
-            >
+  <div class="swiper memories-swiper">
+    <div class="swiper-wrapper">
 
-            <img
-                src="img/recuerdo2.jpg"
-                alt="Nuestro recuerdo 2"
-            >
-
-            <img
-                src="img/recuerdo3.jpg"
-                alt="Nuestro recuerdo 3"
-            >
-
-            <img
-                src="img/recuerdo4.jpg"
-                alt="Nuestro recuerdo 4"
-            >
-
+      <div class="swiper-slide">
+        <img src="img/recuerdo1.jpg" alt="Nuestro primer recuerdo">
+        <div class="memory-caption">
+          <span>♡ 01</span>
+          <h3>Donde comenzó todo</h3>
+          <p>Un recuerdo que siempre tendrá un lugar en mi corazón.</p>
         </div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="img/recuerdo2.jpg" alt="Un momento especial juntos">
+        <div class="memory-caption">
+          <span>♡ 02</span>
+          <h3>Un momento especial</h3>
+          <p>Contigo, hasta los pequeños momentos se vuelven inolvidables.</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="img/recuerdo3.jpg" alt="Un recuerdo de nuestro amor">
+        <div class="memory-caption">
+          <span>♡ 03</span>
+          <h3>Momentos que atesoro</h3>
+          <p>Hay fotografías que guardan mucho más que una imagen.</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="img/recuerdo4.jpg" alt="Un recuerdo de nuestra historia">
+        <div class="memory-caption">
+          <span>♡ 04</span>
+          <h3>Nuestra historia</h3>
+          <p>Y todavía nos quedan tantos recuerdos por crear.</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide memory-baby-card">
+        <div class="baby-content">
+          <span class="baby-heart">♡</span>
+          <p>EL CAPÍTULO MÁS HERMOSO</p>
+          <h3>Lía Victoria</h3>
+          <p>Nuestro amor crece y ahora tiene un nuevo nombre.</p>
+          <a href="embarazo.html">Descubrir su historia →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="memories-pagination"></div>
+
+  <p class="memories-hint">Desliza las tarjetas para descubrir nuestros recuerdos ♡</p>
+
+</div>
+
 
     </section>
 
@@ -158,6 +200,37 @@
     >
         ♪
     </button>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<script>
+  const memoriesSwiper = new Swiper(".memories-swiper", {
+    effect: "cards",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: false,
+    speed: 650,
+
+    cardsEffect: {
+      perSlideOffset: 10,
+      perSlideRotate: 3,
+      rotate: true,
+      slideShadows: true
+    },
+
+    pagination: {
+      el: ".memories-pagination",
+      clickable: true
+    },
+
+    keyboard: {
+      enabled: true
+    }
+  });
+</script>
+</body>
+</html>
 
 
 
