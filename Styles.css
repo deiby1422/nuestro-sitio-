@@ -868,3 +868,23 @@ button {
     font-size: 1.5rem;
   }
 }
+
+/* TARJETA DESTACADA: CONSERVA EL FONDO ORIGINAL */
+.familia-destacada {
+    position: relative;
+    max-width: 760px;
+    margin: 70px auto;
+    padding: 55px 25px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 28px;
+
+    /* Fondo translúcido: deja ver la imagen original */
+    background: rgba(255, 240, 245, 0.72);
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
+    box-shadow: 0 20px 50px rgba(80, 30, 55, 0.18);
+}
