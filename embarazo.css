@@ -1,4 +1,4 @@
-
+          
 :root {
   --pink: #f4a9c6;
   --deep-pink: #c65d8a;
@@ -546,4 +546,12 @@ footer {
     opacity: 1;
     transform: none;
   }
+}
+.ultrasound-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: 16px;
 }
