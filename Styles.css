@@ -888,3 +888,22 @@ button {
 
     box-shadow: 0 20px 50px rgba(80, 30, 55, 0.18);
 }
+
+.carta {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.carta p {
+    text-align: justify;
+}
+
+.carta h1,
+.carta h2 {
+    text-align: center;
+}
+
+.carta p {
+    text-align: justify;
+}
